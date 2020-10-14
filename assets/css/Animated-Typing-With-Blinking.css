@@ -1,0 +1,20 @@
+.animatetext a {
+  color: #16fbfb;
+  font-size: 50px;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+.animatetext b {
+  color: #16fbfb;
+  font-family: monospace;
+}
+
+.animatetext p {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: monospace;
+  text-decoration: none;
+  text-transform: none;
+}
+
