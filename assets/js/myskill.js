@@ -1,6 +1,6 @@
 var ctx = document.getElementById("myChart");
 var data = {
-    labels: ["Android Development", "R", "Data Science", "Javascript", "Penetration Testing", "Java", "Python", "Explaination"],
+    labels: ["Android Development", "R", "Data Science", "Javascript", "Penetration Testing", "Java", "Python", "Explanation"],
     datasets: [
         {
             label: "Percieved Interest",
