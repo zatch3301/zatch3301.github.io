@@ -1,0 +1,420 @@
+:root {
+    --cardtext: rgb(82, 80, 80);
+    --white: #ffffff;
+    --black: #000000;
+    --lightblue: #8ac9d4;
+    --blue: #3c9bac;
+    --otherblue: #1c7f91;
+    --hoverblue: #a0dee9;
+}
+
+.mainWrapper {
+    margin-top: 120px;
+}
+
+#typed {
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'BioRhyme', serif;
+    letter-spacing: 1px;
+}
+
+#typed .name {
+    color: var(--lightblue);
+}
+
+.connect {
+    display: none;
+}
+
+.connect ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 5px !important;
+}
+
+.connect ul li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    transition: transform .2s;
+}
+
+.connect ul li:hover {
+    transform: scale(1.5);
+}
+
+.line div {
+    width: 70px;
+    height: 2px;
+    background-color: var(--black);
+    margin-right: 5px !important;
+    transition: width 2s;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.line div {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.connect ul li a:link,
+.connect ul li a:visited {
+    color: var(--black);
+}
+
+.connect ul li a:hover {
+    color: var(--otherblue);
+}
+
+.connect ul li i {
+    font-size: 22px;
+}
+
+.about {
+    margin-top: 60px;
+    display: none;
+    font-family: 'Space Mono', monospace;
+}
+
+.about h2 {
+    text-decoration: underline;
+}
+
+.about p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.about .interests {
+    font-weight: 900 !important;
+    color: var(--lightblue);
+}
+
+.about p a:link,
+.about p a:visited {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.about p a:hover {
+    color:var(--lightblue);
+}
+
+.skills ul {
+    margin-top: 10px;
+    padding-inline-start: 20px !important;
+}
+
+.skills h6 {
+    color: var(--lightblue);
+}
+
+.skills .row {
+    margin-top: 12px;
+}
+
+.skills .col_1,
+.skills .col_2 {
+    padding-top: 10px;
+}
+
+.gtotherPages {
+    display: none;
+    margin-top: 70px;
+}
+
+.gtotherPages ul {
+    list-style-type: none;
+    padding-inline-start: 0px !important;
+}
+
+.gtotherPages ul li {
+    display: inline-block;
+    margin-right: 60px;
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+}
+
+.gtotherPages ul li a:link,
+.gtotherPages ul li a:visited {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.gtotherPages ul li a:hover {
+    color: var(--otherblue);
+}
+
+
+/* at last mobile */
+
+@media(max-width: 768px) {
+    #typed {
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .about h2 {
+        font-size: 24px !important;
+    }
+    .about p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .gtotherPages ul li {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .connect ul li i {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:678px) {
+    .skills {
+        margin-top: 30px;
+    }
+    .gtotherPages {
+        margin-top: 40px;
+    }
+    .about {
+        margin-top: 20px;
+    }
+}
+
+
+/* articles.html */
+
+.goHome {
+    margin-top: 2rem;
+    font-family: 'Space Mono', monospace;
+}
+
+
+/* .goHome .containsLink {
+    display: block;
+} */
+
+.goHome .containsLink ul {
+    padding-inline-start: 0px !important;
+}
+
+.goHome .containsLink ul li {
+    padding-left: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.goHome a:link,
+.goHome a:visited {
+    color: var(--black);
+    text-decoration: underline;
+    font-weight: bolder;
+    text-align: right;
+}
+
+.goHome a:hover {
+    color: var(--otherblue);
+}
+
+.articles {
+    margin-top: 60px;
+}
+
+.articles h3 {
+    font-family: 'BioRhyme', serif;
+    text-decoration: underline;
+}
+
+.articles .card-header {
+    background: var(--white) !important;
+    border-bottom: 1px solid var(--black);
+}
+
+.articles .card {
+    margin-top: 60px;
+    border: 1px solid  var(--black);
+    font-family: 'Space Mono', monospace;
+}
+
+.articles .card .card-text {
+    color: var(--cardtext);
+}
+
+
+/* projects.html */
+
+#project_1 {
+    margin-top: 120px;
+}
+
+.projects {
+    margin-top: 50px;
+}
+
+.projects h3 {
+    font-family: 'BioRhyme', serif;
+    text-decoration: underline;
+}
+
+.projects .card-columns {
+    margin-top: 60px;
+}
+
+.projects .card {
+    border: 1px solid var(--black);
+    font-family: 'Space Mono', monospace;
+}
+
+.projects .card:hover {
+    border: 1px solid var(--otherblue);
+    cursor: pointer;
+    background: var(--hoverblue);
+}
+
+.projects .card .card-header {
+    background: var(--white) !important;
+    border-bottom: 1px solid var(--black);
+    font-weight: bolder;
+}
+
+.projects .card .card-text {
+    margin-top: 10px;
+}
+
+.projects .btn-outline-dark:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.sidebyside {
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .card-columns {
+        column-count: 2 !important;
+    }
+}
+
+@media(max-width: 678px) {
+    .card-columns {
+        column-count: 1 !important;
+    }
+}
+
+
+/* accoms.html */
+
+.accoms {
+    margin-top: 40px;
+    font-family: 'Space Mono', monospace;
+}
+
+.accoms h3 {
+    text-decoration: underline;
+    font-family: 'BioRhyme', serif;
+}
+
+.accoms ol {
+    margin-top: 30px;
+}
+
+.accoms ol li {
+    margin-bottom: 20px;
+}
+
+.accoms ol li a:link,
+.accoms ol li a:visited {
+    color: var(--black);
+    font-size: 18px;
+}
+
+.accoms ol li a:hover {
+    color: var(--otherblue);
+}
+
+.accoms p {
+    margin-top: 50px;
+    color: var(--otherblue);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media(max-width: 678px) {
+    .accoms {
+        margin-top: 60px;
+        font-family: 'Space Mono', monospace;
+    }
+    .accoms ol li a:link,
+    .accoms ol li a:visited {
+        font-size: 14px;
+    }
+}
+
+
+/* general details.html */
+
+.details {
+    margin-top: 100px;
+}
+
+.details h3,
+.details h5 {
+    text-decoration: underline;
+    font-family: 'BioRhyme', serif;
+}
+
+.details p {
+    font-family: 'Space Mono', monospace;
+}
+
+.details .description {
+    text-align: justify;
+}
+
+.details .techstacks {
+    font-family: 'Space Mono', monospace;
+    text-align: normal !important;
+}
+
+.techstacks ul {
+    margin-top: 20px;
+    padding-inline-start: 20px !important;
+}
+
+.blue-text {
+    color: var(--otherblue);
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #8ac9d4;
+    background-color: #8ac9d4;
+}
+
+/* Dark mode */
+
+.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+    --cardtext: rgb(82, 80, 80);
+    --white: #0000;
+    --black: #ffffff;
+    --lightblue: #8ac9d4;
+    --blue: #3c9bac;
+    --otherblue: #1c7f91;
+    --hoverblue: #a0dee9;
+    transition: background-color 0.6s ease, color 1s ease;
+  }
+
