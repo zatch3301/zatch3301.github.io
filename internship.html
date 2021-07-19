@@ -1,95 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
     <!-- link css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/87bbd3728d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/87bbd3728d.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Gagan | Internships</title>
-    <link rel="icon" 
-    type="image/png" 
-    href="coding.png">
-</head>
+    <link rel="icon" type="image/png" href="coding.png" />
+  </head>
 
-<body>
-
-    <div class="container goHome ">
-        <!-- Dark Mode Switch -->
-        <!-- <div class="custom-control custom-switch">
+  <body>
+    <div class="container goHome">
+      <!-- Dark Mode Switch -->
+      <!-- <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="darkSwitch"  onclick="darkmode()"/>
             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
         </div> -->
-        <div class="row">
-            <div class="col-sm-12 containsLink">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="internship.html">Internships</a></li>
-                    <li><a href="accomplishment.html">Accomplishments</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-sm-12 containsLink">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="internship.html">Internships</a></li>
+            <li><a href="accomplishment.html">Accomplishments</a></li>
+          </ul>
         </div>
+      </div>
     </div>
     <div class="container articles">
-        <div id="typed-strings" >
-            <h2>My <strong class="blue-text">Internships</strong>.</h2>
+      <div id="typed-strings">
+        <h2>My <strong class="blue-text">Internships</strong>.</h2>
+      </div>
+      <span id="typed" style="font-size: xx-large"></span>
+      <div class="about">
+        <!-- Zigya Research Intern -->
+        <div class="card mb-3" style="max-width: 100%">
+          <div class="card-body">
+            <h5 class="card-title card-text">
+              <strong>Research Intern </strong>
+            </h5>
+            <strong class="blue-text">Zigya Technology Labs Pvt. Ltd. </strong>
+            <p class="card-text">Nov 2020</p>
+            <p class="card-text mt-4">
+              Collected research for various data science roadmap and courses.
+              Helped seniors members of the staff with researching different
+              data science topics and trends manage the information that is to
+              be analyzed, and draft documents required by supervisors.Wrote
+              articles on WordPress for their website on various essential
+              packages for data science in R and Python.
+            </p>
+            <a
+              href="https://www.zigya.com/"
+              class="btn btn-outline-dark"
+              role="button"
+              aria-pressed="true"
+              target="_blank"
+              >Read More</a
+            >
+          </div>
         </div>
-        <span id="typed" style="font-size: xx-large;"></span>
-        <div class="about">
-            <!-- Zigya Research Intern -->
-            <div class="card mb-3" style="max-width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title card-text"><strong>Research Intern </strong></h5>
-                    <strong class="blue-text">Zigya Technology Labs Pvt. Ltd. </strong> 
-                    <p class="card-text">Nov 2020</p>
-                    <p class="card-text mt-4">
-                        This is an article about how I did the data visualisation project in R and ggplot2. 
-                        I collected this dataset using spotify API with the help of spotifyr package. 
-                        This is a datset of my top 98 most listened (or played) tracks on spotify.
-                    </p>
-                    <a href="https://www.zigya.com/" class="btn btn-outline-dark" role="button" aria-pressed="true" target="_blank">Read More</a>
-                </div>
-            </div>
-            <!-- Sirpi Data Science Internships -->
-            <div class="card mb-3" style="max-width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title card-text">
-                        <strong>Data Science Intern</strong></h5>
-                        <strong class="blue-text">Sirpi Product and Services Pvt. Ltd. </strong>
-                        <p class="card-text">Jun 2020 - Aug 2020</p>
-                    <p class="card-text mt-4">
-                        In this internship, I got to learn about data visualisation in R with ggplot2 and shiny, 
-                        I also solved reprex and writing R modules for one of their wind project. Also worked with R markdown.
-                    </p>
-                    <span class="sidebyside">
-                        <a href="https://www.sirpi.io/" class="btn btn-outline-dark" role="button" aria-pressed="true" target="_blank">Read More</a>
-                        <a href="https://drive.google.com/drive/folders/1G-QPnpOVpQ-lwylhJcZT0FWPO_uKvDG5" class="btn btn-outline-dark" role="button" aria-pressed="true" target="_blank">Details</a>
-                    </span>
-                </div>
-            </div>
+        <!-- Sirpi Data Science Internships -->
+        <div class="card mb-3" style="max-width: 100%">
+          <div class="card-body">
+            <h5 class="card-title card-text">
+              <strong>Data Science Intern</strong>
+            </h5>
+            <strong class="blue-text"
+              >Sirpi Product and Services Pvt. Ltd.
+            </strong>
+            <p class="card-text">Jun 2020 - Aug 2020</p>
+            <p class="card-text mt-4">
+              In this internship, I got to learn about data visualisation in R
+              with ggplot2 and shiny, I also solved reprex and writing R modules
+              for one of their wind project. Also worked with R markdown.
+            </p>
+            <span class="sidebyside">
+              <a
+                href="https://www.sirpi.io/"
+                class="btn btn-outline-dark"
+                role="button"
+                aria-pressed="true"
+                target="_blank"
+                >Read More</a
+              >
+              <a
+                href="https://drive.google.com/drive/folders/1G-QPnpOVpQ-lwylhJcZT0FWPO_uKvDG5"
+                class="btn btn-outline-dark"
+                role="button"
+                aria-pressed="true"
+                target="_blank"
+                >Details</a
+              >
+            </span>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -97,28 +143,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
     <script type="text/javascript">
-        var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
-            typeSpeed: 40,
-            showCursor: false
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 40,
+        showCursor: false,
+      });
 
-        });
+      $(document).ready(function () {
+        setTimeout(function () {
+          $('.about').fadeIn(1500);
+        }, 600);
+      });
 
-        $(document).ready(function() {
-
-            setTimeout(function() {
-                $(".about").fadeIn(1500);
-            }, 600);
-
-        })
-
-        function darkmode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }   
-
+      function darkmode() {
+        var element = document.body;
+        element.classList.toggle('dark-mode');
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
